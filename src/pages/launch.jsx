@@ -1,9 +1,9 @@
-import '../javascript/launch.js'
-
+import React from 'react';
 
 function launch() {
 
-   
+
+
 
     return (
         <>

@@ -1,4 +1,4 @@
-import '../javascript/register.js'
+
 
 function SignUp() {
 

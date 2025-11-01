@@ -1,4 +1,3 @@
-import '../javascript/about.js'
 
 function AboutUs() {
   return (

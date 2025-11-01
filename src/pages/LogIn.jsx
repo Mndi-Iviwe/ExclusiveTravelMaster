@@ -1,4 +1,4 @@
-import '../javascript/script.js'
+
 
 function LogIn() {
 

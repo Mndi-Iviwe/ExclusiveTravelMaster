@@ -1,4 +1,4 @@
-import '../javascript/contact.js'
+
 
 function ContactUs() {
 
