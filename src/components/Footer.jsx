@@ -40,7 +40,7 @@ function Footer() {
                 
                 <div className="footer-section">
                     <h3 className="footer-heading">Quick Links</h3>
-                    <ul className="footer-links">
+                    <ul className="list-unstyled">
                         <li><a href="Packages.html">Travel Packages</a></li>
                         <li><a href="Visa Application.html">Visa Applications</a></li>
                         <li><a href="AboutUs.html">About Us</a></li>
@@ -50,7 +50,7 @@ function Footer() {
                 
                 <div className="footer-section">
                     <h3 className="footer-heading">Top Destinations</h3>
-                    <ul className="footer-links">
+                    <ul className="list-unstyled">
                         <li><a href="#">Dubai</a></li>
                         <li><a href="#">Mauritius</a></li>
                         <li><a href="#">Zanzibar</a></li>

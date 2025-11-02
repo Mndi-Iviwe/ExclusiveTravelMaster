@@ -17,7 +17,7 @@ function VisaApplication() {
 
 <section>
         <Tabs
-      defaultActiveKey="profile"
+      defaultActiveKey="visa-type"
       id="fill-tab-example"
       className="mb-3"
       fill

@@ -340,7 +340,8 @@ const packagesData = [
     return (
         <>
             <section className="destinations-hero">
-            <div className="hero-background">
+
+            <div className="bg-background2">
                 <img src="images/Second BG.png" alt="Travel Background" className="bg-image" />
             </div>
 
@@ -422,9 +423,9 @@ const packagesData = [
 
                             <div class="package-card" key={pkg.id}>
 
-                <img src={pkg.image} alt="${pkg.title}" class="package-image" />
+                <img src={pkg.image} alt={pkg.title} class="package-image" />
                 <div class="package-overlay">
-                    <div class="duration-badge">${pkg.duration}</div>
+                    <div class="duration-badge">{pkg.duration}</div>
                     <div class="globe-icon">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                             <g clip-path="url(#clip0)">
@@ -436,14 +437,14 @@ const packagesData = [
                     </div>
                 </div>
                 <div class="package-content">
-                    <h3 class="package-title">${pkg.title}</h3>
-                    <p class="package-description">${pkg.description}</p>
+                    <h3 class="package-title">{pkg.title}</h3>
+                    <p class="package-description">{pkg.description}</p>
                     <div class="package-footer">
                         <div class="package-price">
-                            <span class="price-currency">${pkg.price}</span>
+                            <span class="price-currency">{pkg.price}</span>
                             <span class="price-note">per person</span>
                         </div>
-                        <button class="btn-view-details" onclick="openPackageModal(${pkg.id})">View Details</button>
+                        <button class="btn-view-details" >View Details</button>
                     </div>
                 </div>
 
@@ -468,7 +469,7 @@ const packagesData = [
                 <div className="custom-packages-content">
                     <h2 className="custom-title">Didn't Find What You're Looking For?</h2>
                     <p className="custom-text">Contact our travel specialists for a customized travel package tailored to your specific needs and preferences.</p>
-                    <button className="btn-custom-packages" onclick="window.location.href='ContactUs.html?type=custom'">Contact Us for Custom Packages</button>
+                    <button className="btn-custom-packages" >Contact Us for Custom Packages</button>
                 </div>
             </div>
         </section>

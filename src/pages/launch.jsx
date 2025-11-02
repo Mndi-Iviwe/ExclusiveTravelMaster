@@ -72,8 +72,8 @@ const packagesData = [
     return (
         <>
             <section className="hero">
-        <div className="hero-background">
-            <img src="images/First BG.png" alt="Beautiful travel destination" className="hero-image" />
+        <div className="bg-container">
+            
             <div className="hero-overlay">
                 <div className="container">
                     <h1 className="hero-title">Discover the World with</h1>
@@ -160,15 +160,15 @@ const packagesData = [
                     <div className="package-card" key={pkg.id}>
                         <img src={pkg.image} alt={pkg.title} class="package-image" />
                           <div class="package-content">
-                              <div class="package-duration">${pkg.duration}</div>
-                              <h3 class="package-title">${pkg.title}</h3>
-                              <p class="package-description">${pkg.description}</p>
+                              <div class="package-duration">{pkg.duration}</div>
+                              <h3 class="package-title">{pkg.title}</h3>
+                              <p class="package-description">{pkg.description}</p>
                               <div class="package-price">
-                                  <span class="price-amount">${pkg.price}</span>
+                                  <span class="price-amount">{pkg.price}</span>
                                   <span class="price-note">per person</span>
                               </div>
                               <div class="package-actions">
-                                  <button class="btn-view-details" data-id="${pkg.id}">View Details</button>
+                                  <button class="btn-view-details" data-id={pkg.id}>View Details</button>
                               </div>
                           </div>
                     </div>
