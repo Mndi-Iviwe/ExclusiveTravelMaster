@@ -6,7 +6,7 @@ const packagesData = [
         {
             id: 1,
             title: "Dubai Luxury Getaway",
-            image: "images/Dubai.png",
+            image: "/images/Dubai.png",
             duration: "7 Days / 6 Nights",
             description: "Experience the height of luxury in Dubai with this exclusive 7-day package. Enjoy 5-star accommodation, desert safaris, and tours of Dubai's most iconic landmarks.",
             price: "R15,999",
@@ -422,7 +422,7 @@ const packagesData = [
 
                             <div class="package-card" key={pkg.id}>
 
-                <img src="${pkg.image}" alt="${pkg.title}" class="package-image" />
+                <img src={pkg.image} alt="${pkg.title}" class="package-image" />
                 <div class="package-overlay">
                     <div class="duration-badge">${pkg.duration}</div>
                     <div class="globe-icon">

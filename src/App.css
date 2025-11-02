@@ -25,6 +25,7 @@ body {
     height: 80px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .nav-wrapper {
@@ -63,7 +64,7 @@ body {
 }
 
 .btn-login {
-    width: 68px;
+    width: auto;
     height: 40px;
     background: white;
     border: 1px solid #0F3460;
@@ -73,6 +74,7 @@ body {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+    list-style: none;
 }
 
 .btn-login:hover {
@@ -81,7 +83,7 @@ body {
 }
 
 .btn-register {
-    width: 84px;
+    width: auto;
     height: 40px;
     background: #0F3460;
     border: none;
@@ -91,6 +93,7 @@ body {
     font-weight: 500;
     cursor: pointer;
     transition: background 0.3s ease;
+    list-style: none;
 }
 
 .btn-register:hover {

@@ -1,3 +1,5 @@
+import {Link, useMatch, useResolvedPath} from 'react-router-dom'
+
 function Header() {
   
 
@@ -11,15 +13,15 @@ function Header() {
                     <img src="images/logo.png" alt="Exclusive Travels" className="logo-img" />
                 </div>
                 <nav className="nav">
-                    <a href="launch.html" className="nav-link">Home</a>
-                    <a href="Packages.html" className="nav-link">Destinations</a>
-                    <a href="visa.html" className="nav-link active">Visa Application</a>
-                    <a href="AboutUs.html" className="nav-link">About Us</a>
-                    <a href="ContactUs.html" className="nav-link">Contact</a>
+                            <CustomLink to='/launch'>Home</CustomLink>
+                            <CustomLink to='/Packages'>Destinations</CustomLink>
+                            <CustomLink to='/Visa Application'>Visa Application</CustomLink>
+                            <CustomLink to='/AboutUs'>About Us</CustomLink>
+                            <CustomLink to='/ContactUs'>Contact</CustomLink>
                 </nav>
                 <div className="auth-buttons">
-                    <button className="btn-login" >Login</button>
-                    <button className="btn-register">Register</button>
+                    <button className="btn-login" ><CustomLink to='/Login'>Login</CustomLink></button>
+                    <button className="btn-register"><CustomLink to='/SignUp'>Register</CustomLink></button>
                 </div>
             </div>
         </div>
@@ -30,3 +32,17 @@ function Header() {
 
 export default Header
 
+//linking function - uses window  data to refernece to different links/pages
+export function CustomLink({to, children, ...props}) {
+
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({path:resolvedPath.pathname, end: true})
+
+    return(
+        <li className={isActive ? "active" : ""}>
+             <Link to={to} {...props} className='text-decoration-none text-reset'>
+                {children}
+             </Link>
+        </li>
+    )
+}

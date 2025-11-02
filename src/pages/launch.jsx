@@ -2,7 +2,71 @@ import React from 'react';
 
 function launch() {
 
-
+const packagesData = [
+    {
+        id: 1,
+        title: "Dubai Luxury Getaway",
+        image: "images/Dubai.png",
+        duration: "7 Days / 6 Nights",
+        description: "Experience the height of luxury in Dubai with this exclusive 7-day package. Enjoy 5-star accommodation, desert safaris, and tours of Dubai's most iconic landmarks.",
+        price: "R12,999",
+        location: "Dubai"
+    },
+    {
+        id: 2,
+        title: "Mauritius Beach Escape",
+        image: "images/Mauritius.png",
+        duration: "8 Days / 7 Nights",
+        description: "Relax on the pristine beaches of Mauritius with this all-inclusive luxury package. Enjoy water sports, spa treatments, and the beautiful lagoons of this island paradise.",
+        price: "R15,499",
+        location: "Mauritius"
+    },
+    {
+        id: 3,
+        title: "Zanzibar Island Adventure",
+        image: "images/Zanzibar.png",
+        duration: "6 Days / 5 Nights",
+        description: "Discover the spice island of Zanzibar with this exotic package. Explore historic Stone Town, relax on white sand beaches, and experience the unique culture and cuisine.",
+        price: "R10,999",
+        location: "Zanzibar"
+    },
+    {
+        id: 4,
+        title: "Maldives Water Villa Experience",
+        image: "images/Maldives.png",
+        duration: "5 Days / 4 Nights",
+        description: "Indulge in the ultimate luxury with an overwater villa stay in the Maldives. Experience crystal-clear waters, world-class snorkeling, and unparalleled service.",
+        price: "R18,999",
+        location: "Maldives"
+    },
+    {
+        id: 5,
+        title: "Serengeti Safari Adventure",
+        image: "images/Serengeti.png",
+        duration: "8 Days / 7 Nights",
+        description: "Experience the breathtaking wildlife of Tanzania with this exclusive safari package. Witness the Great Migration, explore the vast plains of Serengeti, and discover the natural wonders of the Ngorongoro Crater.",
+        price: "R16,499",
+        location: "Tanzania"
+    },
+    {
+        id: 6,
+        title: "Vietnam Cultural Journey",
+        image: "images/Vietnam.png",
+        duration: "10 Days / 9 Nights",
+        description: "Immerse yourself in the rich culture and history of Vietnam. From the bustling streets of Hanoi to the serene beauty of Ha Long Bay, experience the best of this fascinating country.",
+        price: "R13,999",
+        location: "Vietnam"
+    },
+    {
+        id: 7,
+        title: "Canadian Rockies Explorer",
+        image: "images/Canadian.png",
+        duration: "7 Days / 6 Nights",
+        description: "Discover the breathtaking beauty of the Canadian Rockies with this premium package. From the turquoise lakes of Banff to the alpine meadows of Jasper, experience Canada's natural splendor.",
+        price: "R14,999",
+        location: "Canada"
+    }
+];
 
 
     return (
@@ -88,8 +152,34 @@ function launch() {
             <h2 className="section-title">Featured Travel Packages</h2>
             <p className="section-subtitle">Explore our handpicked selection of luxury travel experiences at exceptional destinations around the world.</p>
             
+
             <div className="packages-grid" id="packages-grid">
-                {/* Packages will be dynamically loaded here*/}
+
+                {packagesData.map((pkg) => (
+
+                    <div className="package-card" key={pkg.id}>
+                        <img src={pkg.image} alt={pkg.title} class="package-image" />
+                          <div class="package-content">
+                              <div class="package-duration">${pkg.duration}</div>
+                              <h3 class="package-title">${pkg.title}</h3>
+                              <p class="package-description">${pkg.description}</p>
+                              <div class="package-price">
+                                  <span class="price-amount">${pkg.price}</span>
+                                  <span class="price-note">per person</span>
+                              </div>
+                              <div class="package-actions">
+                                  <button class="btn-view-details" data-id="${pkg.id}">View Details</button>
+                              </div>
+                          </div>
+                    </div>
+
+                ))}
+
+            
+
+
+                        
+
             </div>
             
             <div className="view-all-container">
