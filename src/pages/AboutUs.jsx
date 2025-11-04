@@ -57,8 +57,8 @@ function AboutUs() {
                 <h2 className="cta-title">Ready to Experience Our Service?</h2>
                 <p className="cta-subtitle">Let us help you plan your next adventure with our expert travel management services.</p>
                 <div className="cta-buttons">
-                    <button className="btn-primary" >Explore Our Packages</button>
-                    <button className="btn-secondary">Get in Touch</button>
+                    <button className="btn-primary text-nowrap" >Explore Our Packages</button>
+                    <button className="btn-secondary text-nowrap">Get in Touch</button>
                 </div>
             </div>
         </div>

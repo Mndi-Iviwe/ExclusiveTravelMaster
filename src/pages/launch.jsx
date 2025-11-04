@@ -1,4 +1,5 @@
 import React from 'react';
+import {CustomLink} from '../components/Header';
 
 function launch() {
 
@@ -158,19 +159,21 @@ const packagesData = [
                 {packagesData.map((pkg) => (
 
                     <div className="package-card" key={pkg.id}>
-                        <img src={pkg.image} alt={pkg.title} class="package-image" />
-                          <div class="package-content">
-                              <div class="package-duration">{pkg.duration}</div>
-                              <h3 class="package-title">{pkg.title}</h3>
-                              <p class="package-description">{pkg.description}</p>
-                              <div class="package-price">
-                                  <span class="price-amount">{pkg.price}</span>
-                                  <span class="price-note">per person</span>
+                        <img src={pkg.image} alt={pkg.title} className="package-image" />
+                          <div className="package-content">
+                              <div className="package-duration">{pkg.duration}</div>
+                              <h3 className="package-title">{pkg.title}</h3>
+                              <p className="package-description">{pkg.description}</p>
+                              <div className="package-price">
+                                  <span className="price-amount">{pkg.price}</span>
+                                  <span className="price-note">per person</span>
                               </div>
-                              <div class="package-actions">
-                                  <button class="btn-view-details" data-id={pkg.id}>View Details</button>
+                              <div className="package-actions">
+                                  <button className="btn-view-details list-unstyled p-3" data-id={pkg.id}><CustomLink to= "/Packages" >View Details</CustomLink></button>
                               </div>
                           </div>
+
+
                     </div>
 
                 ))}
@@ -183,7 +186,7 @@ const packagesData = [
             </div>
             
             <div className="view-all-container">
-                <button className="btn-view-all">View All Packages</button>
+                <button className="btn-view-details list-unstyled p-2"><CustomLink to = "/Packages" ><span className="list-style-none" >View All Packages</span></CustomLink></button>
             </div>
         </div>
     </section>
@@ -243,8 +246,8 @@ const packagesData = [
             <p className="cta-subtitle">Let us help you plan your perfect getaway with exclusive packages and personalized service.</p>
             
             <div className="cta-buttons">
-                <button className="btn-primary">Explore Packages</button>
-                <button className="btn-secondary">Contact Us</button>
+                <button className="btn-primary text-nowrap">Explore Packages</button>
+                <button className="btn-secondary text-nowrap">Contact Us</button>
             </div>
         </div>
     </section>

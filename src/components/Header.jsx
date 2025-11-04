@@ -40,8 +40,8 @@ export function CustomLink({to, children, ...props}) {
 
     return(
         <li className={isActive ? "active" : ""}>
-             <Link to={to} {...props} className='text-decoration-none text-reset'>
-                {children}
+             <Link to={to} {...props} className="nav-link active">
+              {children}
              </Link>
         </li>
     )

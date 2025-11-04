@@ -1,4 +1,4 @@
-
+import {CustomLink} from '../components/Header';
 
 function Packages() {
 
@@ -421,12 +421,12 @@ const packagesData = [
 
                     {packagesData.map(pkg => (
 
-                            <div class="package-card" key={pkg.id}>
+                <div className="package-card" key={pkg.id}>
 
-                <img src={pkg.image} alt={pkg.title} class="package-image" />
-                <div class="package-overlay">
-                    <div class="duration-badge">{pkg.duration}</div>
-                    <div class="globe-icon">
+                <img src={pkg.image} alt={pkg.title} className="package-image" />
+                <div className="package-overlay">
+                    <div className="duration-badge">{pkg.duration}</div>
+                    <div className="globe-icon">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                             <g clip-path="url(#clip0)">
                                 <path d="M7 12.8332C10.2217 12.8332 12.8333 10.2215 12.8333 6.99984C12.8333 3.77818 10.2217 1.1665 7 1.1665C3.77834 1.1665 1.16667 3.77818 1.16667 6.99984C1.16667 10.2215 3.77834 12.8332 7 12.8332Z" stroke="white" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
@@ -436,19 +436,21 @@ const packagesData = [
                         </svg>
                     </div>
                 </div>
-                <div class="package-content">
-                    <h3 class="package-title">{pkg.title}</h3>
-                    <p class="package-description">{pkg.description}</p>
-                    <div class="package-footer">
-                        <div class="package-price">
-                            <span class="price-currency">{pkg.price}</span>
-                            <span class="price-note">per person</span>
+                <div className="package-content">
+                    <h3 className="package-title">{pkg.title}</h3>
+                    <p className="package-description">{pkg.description}</p>
+                    <div className="package-footer">
+                        <div className="package-price">
+                            <span className="price-currency">{pkg.price}</span>
+                            <span className="price-note">per person</span>
                         </div>
-                        <button class="btn-view-details" >View Details</button>
+                        <button className="btn-view-details" >View Details</button>
                     </div>
                 </div>
 
             </div>
+
+
                 
                 ))}
 
@@ -456,11 +458,7 @@ const packagesData = [
                 
 
             </div>    
-                
-               
-                <div className="load-more-container">
-                    <button className="btn-load-more" id="loadMoreBtn">Load More Packages</button>
-                </div>
+
             </div>
         </section>
 
@@ -469,7 +467,7 @@ const packagesData = [
                 <div className="custom-packages-content">
                     <h2 className="custom-title">Didn't Find What You're Looking For?</h2>
                     <p className="custom-text">Contact our travel specialists for a customized travel package tailored to your specific needs and preferences.</p>
-                    <button className="btn-custom-packages" >Contact Us for Custom Packages</button>
+                    <button className="btn-custom-packages list-unstyled p-2" > <CustomLink to='/ContactUs'>Contact Us for Custom Packages</CustomLink></button>
                 </div>
             </div>
         </section>

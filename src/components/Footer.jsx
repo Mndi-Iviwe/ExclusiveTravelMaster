@@ -1,3 +1,5 @@
+import { CustomLink } from "./Header"
+
 function Footer() {
   
 
@@ -40,22 +42,24 @@ function Footer() {
                 
                 <div className="footer-section">
                     <h3 className="footer-heading">Quick Links</h3>
-                    <ul className="list-unstyled">
-                        <li><a href="Packages.html">Travel Packages</a></li>
-                        <li><a href="Visa Application.html">Visa Applications</a></li>
-                        <li><a href="AboutUs.html">About Us</a></li>
-                        <li><a href="ContactUs.html">Contact Us</a></li>
+                    <ul className="list-unstyled ">
+                        <CustomLink to='/launch'>Homepage</CustomLink>
+                        <CustomLink to='/Packages'>Travel Packages</CustomLink>
+                        <CustomLink to='/AboutUs'>About Us</CustomLink>
+                        <CustomLink to='/ContactUs'>Contact Us</CustomLink>
                     </ul>
                 </div>
                 
                 <div className="footer-section">
                     <h3 className="footer-heading">Top Destinations</h3>
                     <ul className="list-unstyled">
-                        <li><a href="#">Dubai</a></li>
-                        <li><a href="#">Mauritius</a></li>
-                        <li><a href="#">Zanzibar</a></li>
-                        <li><a href="#">Bali</a></li>
-                        <li><a href="#">Maldives</a></li>
+
+
+                        <CustomLink to='#'> Dubai</CustomLink>
+                        <CustomLink to='#'>Mauritius</CustomLink>
+                        <CustomLink  to='#'>Zanzibar</CustomLink>
+                        <CustomLink to='#'>Bali</CustomLink>
+                        <CustomLink  to='#'>Maldives</CustomLink>
                     </ul>
                 </div>
                 
