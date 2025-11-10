@@ -1,8 +1,10 @@
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import { CustomLink } from '../components/Header';
 
 function VisaApplication() {
 
+   
 
     return (
         <>
@@ -17,12 +19,12 @@ function VisaApplication() {
 
 <section>
         <Tabs
-      defaultActiveKey="visa-type"
+      defaultActiveKey='visa-type'
       id="fill-tab-example"
       className="mb-3"
       fill
     >
-      <Tab eventKey="visa-type" title="Visa Application Info">
+      <Tab eventKey="visa-type" title="Visa Application Info" >
         <div className="visa-info-content">
                 <h2 className="section-main-title">Our Visa Services</h2>
                 <p className="section-main-subtitle">Exclusive Travels offers comprehensive visa application services to ensure a hassle-free travel experience. Our experienced team will guide you through the entire process, from documentation to submission.</p>
@@ -182,18 +184,16 @@ function VisaApplication() {
                         <p className="faq-answer">Yes, we offer expedited processing services for urgent travel needs at an additional cost, subject to embassy availability.</p>
                     </div>
                     
-                    <div className="faq-action">
-                        <button className="btn-start-application" onclick="window.location.href='visa-application.html'">Start Your Visa Application</button>
-                    </div>
+
                 </div>
             </div>
 
 
       </Tab>
-      <Tab eventKey="visa-form" title="Visa Application Form">
+      <Tab eventKey="visa-form" title="Visa Application Form" id='visaapp'>
 
       <div className="visa-info-content">   
-            <h2 className="form-main-title">Tourist Visa Application</h2>
+            <h2 className="form-main-title">Visa Application</h2>
                 <p className="form-main-subtitle">Please complete the form below and upload the required documents.</p>
 
                

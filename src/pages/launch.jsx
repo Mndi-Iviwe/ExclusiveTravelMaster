@@ -169,7 +169,7 @@ const packagesData = [
                                   <span className="price-note">per person</span>
                               </div>
                               <div className="package-actions">
-                                  <button className="btn-view-details list-unstyled p-3" data-id={pkg.id}><CustomLink to= "/Packages" >View Details</CustomLink></button>
+                                  <button className="btn-view-details list-unstyled p-3" data-id={pkg.id}><CustomLink to= "#" >View Details</CustomLink></button>
                               </div>
                           </div>
 
@@ -246,8 +246,8 @@ const packagesData = [
             <p className="cta-subtitle">Let us help you plan your perfect getaway with exclusive packages and personalized service.</p>
             
             <div className="cta-buttons">
-                <button className="btn-primary text-nowrap">Explore Packages</button>
-                <button className="btn-secondary text-nowrap">Contact Us</button>
+                <button className="btn-primary text-nowrap"><CustomLink to='/Packages'>Explore Packages</CustomLink></button>
+                <button className="btn-secondary text-nowrap"><CustomLink to='ContactUs'>Contact Us</CustomLink></button>
             </div>
         </div>
     </section>

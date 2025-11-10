@@ -444,7 +444,7 @@ const packagesData = [
                             <span className="price-currency">{pkg.price}</span>
                             <span className="price-note">per person</span>
                         </div>
-                        <button className="btn-view-details" >View Details</button>
+                        <button className="btn-view-details list-unstyled p-2" > <CustomLink>View Details</CustomLink></button>
                     </div>
                 </div>
 
@@ -467,7 +467,7 @@ const packagesData = [
                 <div className="custom-packages-content">
                     <h2 className="custom-title">Didn't Find What You're Looking For?</h2>
                     <p className="custom-text">Contact our travel specialists for a customized travel package tailored to your specific needs and preferences.</p>
-                    <button className="btn-custom-packages list-unstyled p-2" > <CustomLink to='/ContactUs'>Contact Us for Custom Packages</CustomLink></button>
+                    <button className="btn-custom-packages list-unstyled p-3" > <CustomLink to='/ContactUs'>Contact Us for Custom Packages</CustomLink></button>
                 </div>
             </div>
         </section>

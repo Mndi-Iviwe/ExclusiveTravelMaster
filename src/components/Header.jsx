@@ -10,7 +10,7 @@ function Header() {
         
             <div className="nav-wrapper">
                 <div className="logo">
-                    <img src="images/logo.png" alt="Exclusive Travels" className="logo-img" />
+                    <img src="images/Rettina.png" alt="Exclusive Travels" className="logo-img" />
                 </div>
                 <nav className="nav">
                             <CustomLink to='/launch'>Home</CustomLink>

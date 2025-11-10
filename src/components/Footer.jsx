@@ -10,7 +10,7 @@ function Footer() {
         <div className="container">
             <div className="footer-content">
                 <div className="footer-section">
-                    <img src="images/logo.png" alt="Exclusive Travels" className="footer-logo" />
+                    <img src="images/Rettina.png" alt="Exclusive Travels" className="footer-logo" />
                     <p className="footer-description">Discover the world with Exclusive Travels. We provide luxury travel experiences and personalized service to create unforgettable memories.</p>
                     
                     <div className="social-links">
